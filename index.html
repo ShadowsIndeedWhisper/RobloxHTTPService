@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Generator</title>
+    <title>Simple Page</title>
 </head>
 <body>
 
 <script>
-    // Generate a random number between 1 and 100 (you can adjust the range as needed)
-    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    // Get the part of the URL after the last slash
+    var textAfterSlash = window.location.pathname.split('/').pop();
 
-    // Output the random number as plain text
-    document.write(randomNumber);
+    // Display the text or 'Home' if there is no text after the slash
+    document.write(textAfterSlash || 'Home');
 </script>
 
 </body>
